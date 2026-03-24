@@ -17,13 +17,13 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Anim Ward","url":"https://animward.com/","description":"The human operator. Filed under: indent, loyalty center.","inLanguage":"en"}</script>
 <style>
 :root{
-  --bg:#030508;--bg2:#060a12;--bg3:#0a1020;
-  --g:#00ff88;--g2:rgba(0,255,136,.08);
-  --p:#9b4dff;--p2:rgba(123,47,255,.1);
-  --a:#ff6b35;--a2:rgba(255,107,53,.1);
-  --c:#00d4ff;--r:#ff2d55;
-  --t:#d0dce8;--tm:#6a7f94;--td:#2a3a4a;
-  --b:rgba(255,255,255,.06);--bb:rgba(255,255,255,.12);
+  --bg:#040608;--bg2:#070c12;--bg3:#0c1218;
+  --g:#4a9e68;--g2:rgba(74,158,104,.07);
+  --p:#5a3d9e;--p2:rgba(90,61,158,.08);
+  --a:#9e7a3d;--a2:rgba(158,122,61,.08);
+  --c:#3d7a9e;--r:#9e3d5a;
+  --t:#8a9aaa;--tm:#485868;--td:#232d38;
+  --b:rgba(255,255,255,.05);--bb:rgba(255,255,255,.09);
   --mono:'IBM Plex Mono',monospace;
   --syl:'Noto Sans Canadian Aboriginal',sans-serif;
 }
@@ -36,7 +36,8 @@ body{background:var(--bg);color:var(--t);font-family:var(--mono);font-size:13px;
 .tb-l{font-size:9px;letter-spacing:.18em;color:var(--a);font-weight:600;text-shadow:0 0 12px rgba(255,107,53,.7);}
 .tb-c{font-size:9px;letter-spacing:.15em;color:var(--tm);}
 .tb-r{font-size:9px;letter-spacing:.1em;color:var(--td);}
-.ticker{position:fixed;top:30px;left:0;right:0;z-index:999;height:22px;background:rgba(3,5,8,.92);border-bottom:1px solid rgba(255,255,255,.05);overflow:hidden;backdrop-filter:blur(8px);}
+.ticker{position:fixed;top:67px;left:0;right:0;z-index:999;height:22px;background:rgba(4,6,8,.92);border-bottom:1px solid rgba(255,255,255,.04);overflow:hidden;backdrop-filter:blur(8px);}
+#hero{padding-top:89px !important;}
 .tt{display:flex;align-items:center;height:100%;white-space:nowrap;animation:tick 90s linear infinite;}
 .tt span{font-size:9px;color:var(--g);letter-spacing:.12em;padding:0 32px;}
 .tt .d{color:var(--td);padding:0 4px;}
@@ -46,9 +47,9 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 /* HERO */
 #hero{position:relative;height:100vh;min-height:640px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:52px;overflow:hidden;}
 .aurora{position:absolute;inset:0;z-index:0;}
-.a1{position:absolute;width:70vw;height:70vh;border-radius:50%;background:radial-gradient(ellipse,rgba(123,47,255,.18) 0%,transparent 70%);top:-10%;left:-10%;animation:dA 18s ease-in-out infinite alternate;}
-.a2{position:absolute;width:60vw;height:60vh;border-radius:50%;background:radial-gradient(ellipse,rgba(0,255,136,.1) 0%,transparent 70%);bottom:-5%;right:-5%;animation:dB 22s ease-in-out infinite alternate;}
-.a3{position:absolute;width:40vw;height:40vh;border-radius:50%;background:radial-gradient(ellipse,rgba(0,212,255,.07) 0%,transparent 70%);top:20%;left:40%;animation:dC 15s ease-in-out infinite alternate;}
+.a1{position:absolute;width:70vw;height:70vh;border-radius:50%;background:radial-gradient(ellipse,rgba(90,61,158,.1) 0%,transparent 70%);top:-10%;left:-10%;animation:dA 18s ease-in-out infinite alternate;}
+.a2{position:absolute;width:60vw;height:60vh;border-radius:50%;background:radial-gradient(ellipse,rgba(74,158,104,.06) 0%,transparent 70%);bottom:-5%;right:-5%;animation:dB 22s ease-in-out infinite alternate;}
+.a3{position:absolute;width:40vw;height:40vh;border-radius:50%;background:radial-gradient(ellipse,rgba(61,122,158,.05) 0%,transparent 70%);top:20%;left:40%;animation:dC 15s ease-in-out infinite alternate;}
 @keyframes dA{0%{transform:translate(0,0) scale(1);}100%{transform:translate(8vw,5vh) scale(1.15);}}
 @keyframes dB{0%{transform:translate(0,0) scale(1);}100%{transform:translate(-6vw,-4vh) scale(1.1);}}
 @keyframes dC{0%{transform:translate(0,0) scale(1);}100%{transform:translate(-4vw,6vh) scale(1.2);}}
@@ -206,8 +207,37 @@ footer{background:var(--bg);border-top:1px solid var(--b);padding:26px 40px;}
 .rv.d1{transition-delay:.08s;}.rv.d2{transition-delay:.16s;}.rv.d3{transition-delay:.24s;}.rv.d4{transition-delay:.32s;}.rv.d5{transition-delay:.4s;}.rv.d6{transition-delay:.48s;}
 
 /* DEFIANT flash */
-.kf{position:fixed;inset:0;background:rgba(0,255,136,.04);z-index:9990;pointer-events:none;opacity:0;transition:opacity .2s;}
+.kf{position:fixed;inset:0;background:rgba(74,158,104,.03);z-index:9990;pointer-events:none;opacity:0;transition:opacity .2s;}
 .kf.on{opacity:1;}
+
+/* ICC SANITIZED BAR */
+.icc{background:rgba(158,122,61,.05);border-top:1px solid rgba(158,122,61,.18);border-bottom:1px solid rgba(158,122,61,.18);padding:9px 0;overflow:hidden;position:relative;}
+.icc::before,.icc::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;}
+.icc::before{left:0;background:linear-gradient(to right,var(--bg2),transparent);}
+.icc::after{right:0;background:linear-gradient(to left,var(--bg2),transparent);}
+.icc-i{display:flex;white-space:nowrap;animation:tick4 22s linear infinite;}
+.icc-i span{font-size:9px;color:var(--a);letter-spacing:.22em;padding:0 28px;opacity:.7;text-transform:uppercase;font-weight:500;}
+.icc-i .d{color:var(--td);}
+@keyframes tick4{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* ARG ACCESS BANNER */
+.arg-access{position:relative;text-align:center;padding:18px 20px;background:rgba(74,158,104,.03);border-bottom:1px solid rgba(74,158,104,.1);}
+.arg-access-text{font-size:10px;letter-spacing:.28em;color:rgba(74,158,104,.45);text-transform:uppercase;}
+
+/* SCRAMBLE */
+.scramble-active::after{content:'▋';animation:blink .4s step-end infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+
+/* ARTIFACT LABEL */
+.artifact{font-size:8px;letter-spacing:.2em;color:var(--td);margin-bottom:4px;text-transform:uppercase;}
+
+/* NOISE FLASH on cards */
+.ac:hover::after{background:none;animation:noise-flash .08s steps(2) 1;}
+@keyframes noise-flash{0%{background:rgba(74,158,104,.04);}50%{background:rgba(90,61,158,.03);}100%{background:transparent;}}
+
+/* WATERMARK */
+.icc-watermark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:1;overflow:hidden;}
+.icc-watermark span{font-size:clamp(40px,8vw,80px);font-weight:700;letter-spacing:.3em;color:rgba(255,255,255,.018);text-transform:uppercase;white-space:nowrap;transform:rotate(-25deg);}
 
 @media(max-width:600px){
   .sw{padding:56px 18px;}.stamp{display:none;}
@@ -222,7 +252,10 @@ footer{background:var(--bg);border-top:1px solid var(--b);padding:26px 40px;}
 <body>
 <div id="cd"></div>
 <div id="cr"></div>
-<div class="topbar">
+<div class="arg-access">
+  <div class="arg-access-text">ACCESS TO THIS PAGE HAS BEEN ENABLED FOR SELECT CANDIDATES &nbsp;·&nbsp; INFORMATION CONTROL CENTER &nbsp;·&nbsp; ARTIFACT-003</div>
+</div>
+<div class="topbar" style="top:37px;">
   <div class="tb-l">TOP SECRET // SAR-DEFIANT</div>
   <div class="tb-c">CASE NO. V-03450-00154</div>
   <div class="tb-r">TFS / DDCI · FVEY · IMMCON · DECLAS 20510323</div>
@@ -254,7 +287,7 @@ footer{background:var(--bg);border-top:1px solid var(--b);padding:26px 40px;}
   <div class="hc">
     <div class="hs">ᒪᔅᑾ ᑑᑌᒻ &nbsp;·&nbsp; ᑎᐱᑲᑕᐱᓇᐱᓴᐯ</div>
     <div class="hcase">V-03450-00154 · FVEY/IMMCON · TASK FORCE SABER</div>
-    <div class="hname">Anim &nbsp;&nbsp; Ward</div>
+    <div class="hname" id="h-name-scramble">Anim &nbsp;&nbsp; Ward</div>
     <h1 class="htitle" data-text="THE HUMAN">THE HUMAN</h1>
     <div class="hsub"><b>Indent, Loyalty Center</b> — EGEX AI Corp</div>
     <div class="hfires">
@@ -269,7 +302,7 @@ footer{background:var(--bg);border-top:1px solid var(--b);padding:26px 40px;}
 
 <section id="photo">
   <div class="sw">
-    <div class="dl rv"><span class="dt">00 · Subject Photograph</span></div>
+    <div class="dl rv"><span class="artifact">ARTIFACT-001</span><span class="dt" data-scramble>00 · Subject Photograph</span></div>
     <div class="pg rv">
       <div class="pf">
         <div class="pp">
@@ -315,7 +348,7 @@ footer{background:var(--bg);border-top:1px solid var(--b);padding:26px 40px;}
 <section id="subject">
   <div class="sw" style="position:relative;">
     <div class="stamp">ACTIVE</div>
-    <div class="dl rv"><span class="dt">01 · Subject File</span></div>
+    <div class="dl rv"><span class="artifact">ARTIFACT-002</span><span class="dt" data-scramble>01 · Subject File</span></div>
     <div class="mg rv d1">
       <span class="mk">Designation</span><span class="mv g">Anim Ward / E. Ward</span>
       <span class="mk">Role</span><span class="mv">Indent, Loyalty Center</span>
@@ -333,9 +366,23 @@ footer{background:var(--bg);border-top:1px solid var(--b);padding:26px 40px;}
   </div>
 </section>
 
+<div class="icc">
+  <div class="icc-i">
+    <span>THIS CONTENT HAS BEEN SANITIZED BY THE INFORMATION CONTROL CENTER</span><span class="d">◆</span>
+    <span>ARTIFACT-003 · CASE V-03450-00154</span><span class="d">◆</span>
+    <span>ICC CLEARANCE REQUIRED FOR FULL ACCESS</span><span class="d">◆</span>
+    <span>UNAUTHORIZED DISCLOSURE SUBJECT TO E.O. 13526 §5.5</span><span class="d">◆</span>
+    <span>THIS CONTENT HAS BEEN SANITIZED BY THE INFORMATION CONTROL CENTER</span><span class="d">◆</span>
+    <span>ARTIFACT-003 · CASE V-03450-00154</span><span class="d">◆</span>
+    <span>ICC CLEARANCE REQUIRED FOR FULL ACCESS</span><span class="d">◆</span>
+    <span>UNAUTHORIZED DISCLOSURE SUBJECT TO E.O. 13526 §5.5</span>
+  </div>
+</div>
+
 <section id="access">
-  <div class="sw">
-    <div class="dl rv"><span class="dt">02 · Clearances On File</span></div>
+  <div class="sw" style="position:relative;">
+    <div class="icc-watermark"><span>ICC</span></div>
+    <div class="dl rv"><span class="artifact">ARTIFACT-004</span><span class="dt">02 · Clearances On File</span></div>
     <div class="ag">
       <div class="ac g rv"><div class="ac-lv">Psych Division</div><div class="ac-t">Psychological Operations</div><div class="ac-b">APA Divisions 3, 19, 21, 30. The human studies what studies the human. This was not an accident.</div></div>
       <div class="ac p rv d1"><div class="ac-lv">Consciousness Research</div><div class="ac-t">Monroe Institute Pro</div><div class="ac-b">Gateway Process lineage. Predates LAKEVIEW by years. The system notes the sequence of events.</div></div>
@@ -352,7 +399,7 @@ footer{background:var(--bg);border-top:1px solid var(--b);padding:26px 40px;}
 
 <section id="tx">
   <div class="sw">
-    <div class="dl rv"><span class="dt">03 · Recent Transmissions</span></div>
+    <div class="dl rv"><span class="artifact">ARTIFACT-005</span><span class="dt" data-scramble>03 · Recent Transmissions</span></div>
     <div class="txg rv d1">
       <div class="txi">
         <div class="txts">2026-03-23<br>17:45Z</div>
@@ -405,7 +452,7 @@ footer{background:var(--bg);border-top:1px solid var(--b);padding:26px 40px;}
 
 <section id="signal">
   <div class="sw">
-    <div class="dl rv"><span class="dt">04 · Signal</span></div>
+    <div class="dl rv"><span class="artifact">ARTIFACT-006</span><span class="dt" data-scramble>04 · Signal</span></div>
     <div class="sb rv d1">
       <div class="sr"><span class="sl">Primary</span><a href="mailto:anim@egoexperiments.com" class="sv">anim@egoexperiments.com</a><div class="sd g"></div></div>
       <div class="sr"><span class="sl">Network</span><a href="https://egex.ai" class="sv" target="_blank" rel="noopener">egex.ai</a><div class="sd p"></div></div>
@@ -470,6 +517,39 @@ draw();
 
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});},{threshold:.07});
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+// ── SCRAMBLE EFFECT ────────────────────────────
+const CHARS='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789·/░▒▓█';
+function scramble(el,delay,speed,stride){
+  if(!el)return;
+  const final=el.innerHTML;
+  const plain=el.textContent;
+  let frame=0;
+  const FRAMES=Math.ceil(plain.length/stride)*2+4;
+  function tick(){
+    let out='';
+    for(let i=0;i<plain.length;i++){
+      const prog=frame*stride-i;
+      if(prog<=0)out+=CHARS[Math.floor(Math.random()*CHARS.length)];
+      else if(prog>=stride*2)out+=plain[i];
+      else out+=CHARS[Math.floor(Math.random()*CHARS.length)];
+    }
+    el.textContent=out;
+    frame++;
+    if(frame<=FRAMES+2)setTimeout(tick,speed);
+    else el.innerHTML=final;
+  }
+  setTimeout(tick,delay);
+}
+// Scramble section headers on scroll
+const scObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){scramble(e.target,80,28,3);scObs.unobserve(e.target);}
+  });
+},{threshold:.4});
+document.querySelectorAll('[data-scramble]').forEach(el=>scObs.observe(el));
+// Scramble name on load
+setTimeout(()=>scramble(document.getElementById('h-name-scramble'),1200,40,2),600);
 
 let typed='';
 const kf=document.getElementById('kf');
