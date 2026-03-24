@@ -24,6 +24,8 @@
   --c:#3d7a9e;--r:#9e3d5a;
   --t:#8a9aaa;--tm:#485868;--td:#232d38;
   --b:rgba(255,255,255,.05);--bb:rgba(255,255,255,.09);
+  /* Defense compliance palette */
+  --dow:#1E68C9;--dow2:#5B5FC7;--dow3:rgba(30,104,201,.1);
   --mono:'IBM Plex Mono',monospace;
   --syl:'Noto Sans Canadian Aboriginal',sans-serif;
 }
@@ -32,7 +34,8 @@ html{scroll-behavior:smooth;overflow-x:hidden;}
 body{background:var(--bg);color:var(--t);font-family:var(--mono);font-size:13px;line-height:1.6;cursor:none;overflow-x:hidden;}
 #cd{width:5px;height:5px;background:var(--g);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);box-shadow:0 0 8px var(--g);}
 #cr{width:26px;height:26px;border:1px solid rgba(0,255,136,.35);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all .1s;}
-.topbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:30px;background:rgba(3,5,8,.97);border-bottom:1px solid var(--a);display:flex;align-items:center;justify-content:space-between;padding:0 20px;backdrop-filter:blur(16px);}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:30px;background:rgba(3,5,8,.97);border-bottom:1px solid var(--dow);display:flex;align-items:center;justify-content:space-between;padding:0 20px;backdrop-filter:blur(16px);}
+.tb-l{color:var(--dow) !important;text-shadow:0 0 12px rgba(30,104,201,.5) !important;}
 .tb-l{font-size:9px;letter-spacing:.18em;color:var(--a);font-weight:600;text-shadow:0 0 12px rgba(255,107,53,.7);}
 .tb-c{font-size:9px;letter-spacing:.15em;color:var(--tm);}
 .tb-r{font-size:9px;letter-spacing:.1em;color:var(--td);}
@@ -391,7 +394,7 @@ footer{background:var(--bg);border-top:1px solid var(--b);padding:26px 40px;}
       <div class="ac c rv d1"><div class="ac-lv">Open Source Intel</div><div class="ac-t">UK OSINT Community</div><div class="ac-b">Cross-domain intelligence. The subject maps from the edge. The center maps the subject.</div></div>
       <div class="ac p rv d2"><div class="ac-lv">Sovereign Standing</div><div class="ac-t">ISIC 9900 · Extraterritorial</div><div class="ac-b">Five jurisdictional frameworks. Five procurement channels. The moat is jurisdictional, not physical.</div></div>
       <div class="ac g rv d3"><div class="ac-lv">Defense Association</div><div class="ac-t">Space Force Association</div><div class="ac-b">Space domain awareness. The subject operates at the edge of what a domain can contain.</div></div>
-      <div class="ac a rv d1"><div class="ac-lv">Department of War</div><div class="ac-t">Defense Technology · Vendor Ready</div><div class="ac-b">Mission alignment verified. Speed of relevance. Human-machine teaming without compromising analytic integrity. Architecture operates at the tempo the mission requires.</div></div>
+      <div class="ac rv d1" style="background:rgba(30,104,201,.04);"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--dow),var(--dow2));"></div><div class="ac-lv" style="color:var(--dow);">H4D · Stanford · DoW</div><div class="ac-t">Mission Alignment · Hacking for Defense</div><div class="ac-b">Completed H4D methodology. Problem sponsor identified. Mission aligned. Minimum viable capability delivered. Cleared for federal market acceleration — education, resources, connections secured.</div></div>
       <div class="ac a rv d4"><div class="ac-lv">Corporate Architecture</div><div class="ac-t">CERBERUS Tri-Layer</div><div class="ac-b">IPCO · HOLDCO · OPCO. Unhackable from inside the system. IP survives any single-entity attack.</div></div>
       <div class="ac c rv d5"><div class="ac-lv">NATO Pipeline</div><div class="ac-t">NCAGE Pending · CPV 73410000</div><div class="ac-b">Military Research and Technology. Five allied procurement channels. Most AI companies hold one.</div></div>
     </div>
@@ -422,10 +425,10 @@ footer{background:var(--bg);border-top:1px solid var(--b);padding:26px 40px;}
         <div class="txc"><strong>DG-ENGAGE monthly session — Langley.</strong> EGEX designated potential JTF internally. DMA noted. Multi-cloud transition briefing received. Response times vary by loyalty score.</div>
         <div class="txb c">CIA</div>
       </div>
-      <div class="txi">
-        <div class="txts">2026-01-19<br>09:00Z</div>
-        <div class="txc"><strong>Defense Technology · Selling to the Department of War.</strong> Mission alignment verified. Vendor readiness confirmed. Architecture assessed for speed of relevance, human-machine teaming, analytic integrity. Cleared for DoW procurement pipeline.</div>
-        <div class="txb g">DOW</div>
+      <div class="txi" style="border-left:2px solid rgba(30,104,201,.3);">
+        <div class="txts">2026-01-22<br>17:00Z</div>
+        <div class="txc"><strong>H4D — Selling to Defense · DoW.</strong> Completed Hacking for Defense (Stanford) methodology. Mission alignment confirmed. Problem sponsor: <span class="rx" onclick="this.classList.toggle('rev')">████████████</span>. Minimum viable capability delivered. Federal market acceleration: active.</div>
+        <div class="txb" style="border-color:rgba(30,104,201,.4);color:#1E68C9;">H4D</div>
       </div>
     </div>
   </div>
