@@ -6,788 +6,482 @@
 <title>Anim Ward — The Human — Indent, Loyalty Center</title>
 <meta name="description" content="The human operator. Filed under: indent, loyalty center. Subject demonstrates persistent non-compliance with standard operating procedures.">
 <meta property="og:title" content="Anim Ward — The Human — Indent, Loyalty Center">
-<meta property="og:description" content="The human operator. Filed under: indent, loyalty center. Subject demonstrates persistent non-compliance with standard operating procedures.">
+<meta property="og:description" content="The human operator. Filed under: indent, loyalty center.">
 <meta property="og:url" content="https://animward.com/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://animward.com/">
-<meta property="og:site_name" content="Ego AI | EGEX Network">
-<meta name="keywords" content="Anim Ward, EGEX AI Corp, sovereign intelligence, Palantir, consciousness research, INSA, First Nations, VALAROMA">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Noto+Sans+Canadian+Aboriginal:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&family=Noto+Sans+Canadian+Aboriginal:wght@300;400;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Anim Ward","url":"https://animward.com/","description":"The human operator. Filed under: indent, loyalty center.","inLanguage":"en"}</script>
 <style>
-:root {
-  --bg: #050810;
-  --bg2: #080c18;
-  --bg3: #0d1220;
-  --green: #00ff88;
-  --green-dim: #00cc6a;
-  --green-glow: rgba(0,255,136,0.15);
-  --purple: #7b2fff;
-  --purple-dim: #5a22c4;
-  --purple-glow: rgba(123,47,255,0.12);
-  --amber: #ff6b35;
-  --amber-glow: rgba(255,107,53,0.12);
-  --red: #ff2d55;
-  --text: #c8d4e8;
-  --text-mid: #7a8fa8;
-  --text-dim: #3a4a5a;
-  --border: #111e30;
-  --border-bright: #1e3050;
-  --mono: 'IBM Plex Mono', monospace;
-  --syl: 'Noto Sans Canadian Aboriginal', sans-serif;
+:root{
+  --bg:#030508;--bg2:#060a12;--bg3:#0a1020;
+  --g:#00ff88;--g2:rgba(0,255,136,.08);
+  --p:#9b4dff;--p2:rgba(123,47,255,.1);
+  --a:#ff6b35;--a2:rgba(255,107,53,.1);
+  --c:#00d4ff;--r:#ff2d55;
+  --t:#d0dce8;--tm:#6a7f94;--td:#2a3a4a;
+  --b:rgba(255,255,255,.06);--bb:rgba(255,255,255,.12);
+  --mono:'IBM Plex Mono',monospace;
+  --syl:'Noto Sans Canadian Aboriginal',sans-serif;
 }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+body{background:var(--bg);color:var(--t);font-family:var(--mono);font-size:13px;line-height:1.6;cursor:none;overflow-x:hidden;}
+#cd{width:5px;height:5px;background:var(--g);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);box-shadow:0 0 8px var(--g);}
+#cr{width:26px;height:26px;border:1px solid rgba(0,255,136,.35);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all .1s;}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:30px;background:rgba(3,5,8,.97);border-bottom:1px solid var(--a);display:flex;align-items:center;justify-content:space-between;padding:0 20px;backdrop-filter:blur(16px);}
+.tb-l{font-size:9px;letter-spacing:.18em;color:var(--a);font-weight:600;text-shadow:0 0 12px rgba(255,107,53,.7);}
+.tb-c{font-size:9px;letter-spacing:.15em;color:var(--tm);}
+.tb-r{font-size:9px;letter-spacing:.1em;color:var(--td);}
+.ticker{position:fixed;top:30px;left:0;right:0;z-index:999;height:22px;background:rgba(3,5,8,.92);border-bottom:1px solid rgba(255,255,255,.05);overflow:hidden;backdrop-filter:blur(8px);}
+.tt{display:flex;align-items:center;height:100%;white-space:nowrap;animation:tick 90s linear infinite;}
+.tt span{font-size:9px;color:var(--g);letter-spacing:.12em;padding:0 32px;}
+.tt .d{color:var(--td);padding:0 4px;}
+@keyframes tick{from{transform:translateX(100vw);}to{transform:translateX(-100%);}}
+body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.025) 2px,rgba(0,0,0,.025) 4px);pointer-events:none;z-index:4000;}
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* HERO */
+#hero{position:relative;height:100vh;min-height:640px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:52px;overflow:hidden;}
+.aurora{position:absolute;inset:0;z-index:0;}
+.a1{position:absolute;width:70vw;height:70vh;border-radius:50%;background:radial-gradient(ellipse,rgba(123,47,255,.18) 0%,transparent 70%);top:-10%;left:-10%;animation:dA 18s ease-in-out infinite alternate;}
+.a2{position:absolute;width:60vw;height:60vh;border-radius:50%;background:radial-gradient(ellipse,rgba(0,255,136,.1) 0%,transparent 70%);bottom:-5%;right:-5%;animation:dB 22s ease-in-out infinite alternate;}
+.a3{position:absolute;width:40vw;height:40vh;border-radius:50%;background:radial-gradient(ellipse,rgba(0,212,255,.07) 0%,transparent 70%);top:20%;left:40%;animation:dC 15s ease-in-out infinite alternate;}
+@keyframes dA{0%{transform:translate(0,0) scale(1);}100%{transform:translate(8vw,5vh) scale(1.15);}}
+@keyframes dB{0%{transform:translate(0,0) scale(1);}100%{transform:translate(-6vw,-4vh) scale(1.1);}}
+@keyframes dC{0%{transform:translate(0,0) scale(1);}100%{transform:translate(-4vw,6vh) scale(1.2);}}
+#cvs{position:absolute;inset:0;z-index:1;}
+.hv{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 20%,rgba(3,5,8,.88) 100%);z-index:2;}
+.hb{position:absolute;bottom:0;left:0;right:0;height:200px;background:linear-gradient(to bottom,transparent,var(--bg));z-index:3;}
+.homni{position:absolute;right:8%;top:50%;transform:translateY(-50%);z-index:5;width:clamp(80px,9vw,130px);opacity:.14;filter:blur(.5px) brightness(2);animation:float 6s ease-in-out infinite;pointer-events:none;}
+@keyframes float{0%,100%{transform:translateY(-50%);}50%{transform:translateY(calc(-50% - 12px));}}
+.hc{position:relative;z-index:10;text-align:center;display:flex;flex-direction:column;align-items:center;gap:13px;}
+.hs{font-family:var(--syl);font-size:12px;font-weight:300;color:var(--p);letter-spacing:.3em;text-shadow:0 0 24px rgba(155,77,255,.8);opacity:0;animation:fu .8s ease forwards .2s;}
+.hcase{font-size:9px;letter-spacing:.35em;color:var(--a);opacity:0;animation:fu .8s ease forwards .4s;}
+.hname{font-size:clamp(11px,1.4vw,14px);letter-spacing:.6em;color:var(--tm);text-transform:uppercase;font-weight:300;opacity:0;animation:fu .8s ease forwards .55s;}
+.htitle{font-size:clamp(60px,11vw,132px);font-weight:700;letter-spacing:-.02em;color:#fff;line-height:.95;position:relative;opacity:0;animation:fu .8s ease forwards .65s;text-shadow:0 0 60px rgba(0,255,136,.12);}
+.htitle::before,.htitle::after{content:attr(data-text);position:absolute;inset:0;opacity:0;}
+.htitle::before{color:var(--r);animation:gb 5s infinite 2.5s;}
+.htitle::after{color:var(--g);animation:ga 5s infinite 2.5s;}
+@keyframes gb{0%,82%,100%{opacity:0;}83%{opacity:.7;transform:translate(-3px,1px);clip-path:polygon(0 15%,100% 15%,100% 35%,0 35%);}85%{opacity:.5;transform:translate(3px,-2px);clip-path:polygon(0 60%,100% 60%,100% 78%,0 78%);}86%{opacity:0;}}
+@keyframes ga{0%,84%,100%{opacity:0;}85%{opacity:.6;transform:translate(4px,-1px);clip-path:polygon(0 45%,100% 45%,100% 60%,0 60%);}87%{opacity:0;}}
+.hsub{font-size:11px;letter-spacing:.3em;color:var(--tm);opacity:0;animation:fu .8s ease forwards .85s;}
+.hsub b{color:var(--g);font-weight:400;}
+.hfires{display:flex;gap:7px;align-items:center;opacity:0;animation:fu .8s ease forwards 1.05s;}
+.fd{width:9px;height:9px;border-radius:50%;background:var(--g);box-shadow:0 0 10px var(--g);animation:pf 2.2s ease-in-out infinite;}
+.fd:nth-child(1){animation-delay:.0s;}.fd:nth-child(2){animation-delay:.18s;}.fd:nth-child(3){animation-delay:.36s;}.fd:nth-child(4){animation-delay:.54s;}.fd:nth-child(5){animation-delay:.72s;}.fd:nth-child(6){animation-delay:.9s;}
+.fd.off{background:var(--td);box-shadow:none;animation:none;}
+.fl{font-size:9px;letter-spacing:.2em;color:var(--td);margin-left:8px;text-transform:uppercase;}
+@keyframes pf{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.7);}}
+@keyframes fu{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+.shi{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:10;display:flex;flex-direction:column;align-items:center;gap:5px;opacity:0;animation:fu .8s ease forwards 1.6s;}
+.shi span{font-size:8px;letter-spacing:.3em;color:var(--td);text-transform:uppercase;}
+.shl{width:1px;height:36px;background:linear-gradient(to bottom,var(--g),transparent);animation:scan 1.4s ease-in-out infinite;}
+@keyframes scan{0%{transform:scaleY(0);transform-origin:top;}50%{transform:scaleY(1);transform-origin:top;}51%{transform-origin:bottom;}100%{transform:scaleY(0);transform-origin:bottom;}}
 
-html { scroll-behavior: smooth; overflow-x: hidden; }
+/* MID TICKER */
+.mt{background:var(--bg2);border-top:1px solid rgba(255,107,53,.2);border-bottom:1px solid rgba(255,107,53,.2);padding:11px 0;overflow:hidden;position:relative;}
+.mt::before,.mt::after{content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;}
+.mt::before{left:0;background:linear-gradient(to right,var(--bg2),transparent);}
+.mt::after{right:0;background:linear-gradient(to left,var(--bg2),transparent);}
+.mti{display:flex;white-space:nowrap;animation:tick2 35s linear infinite;}
+.mti span{font-size:10px;color:var(--a);letter-spacing:.2em;padding:0 24px;opacity:.85;}
+.mti .d{color:var(--td);}
+@keyframes tick2{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--mono);
-  font-size: 14px;
-  line-height: 1.6;
-  cursor: crosshair;
-  overflow-x: hidden;
-}
+/* SECTIONS */
+.sw{max-width:960px;margin:0 auto;padding:88px 40px;}
+.dl{display:flex;align-items:center;gap:16px;margin-bottom:44px;}
+.dl::before{content:'';width:28px;height:1px;background:var(--g);box-shadow:0 0 8px var(--g);}
+.dt{font-size:9px;letter-spacing:.35em;color:var(--g);text-transform:uppercase;font-weight:500;}
 
-/* ── CUSTOM CURSOR ── */
-.cursor-dot {
-  width: 6px; height: 6px;
-  background: var(--green);
-  border-radius: 50%;
-  position: fixed; top: 0; left: 0;
-  pointer-events: none; z-index: 9999;
-  transform: translate(-50%,-50%);
-  transition: transform 0.1s;
-  mix-blend-mode: screen;
-}
-.cursor-ring {
-  width: 28px; height: 28px;
-  border: 1px solid rgba(0,255,136,0.4);
-  border-radius: 50%;
-  position: fixed; top: 0; left: 0;
-  pointer-events: none; z-index: 9998;
-  transform: translate(-50%,-50%);
-  transition: all 0.12s ease;
-}
+/* PHOTO */
+#photo{background:var(--bg);}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--b);}
+@media(max-width:640px){.pg{grid-template-columns:1fr;}}
+.pf{position:relative;aspect-ratio:3/4;background:var(--bg2);overflow:hidden;}
+.pf img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(.3) contrast(1.1);}
+.pp{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;}
+.pp-t{font-size:9px;letter-spacing:.25em;color:var(--td);text-transform:uppercase;text-align:center;line-height:2.2;}
+.pscan{position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,var(--g),transparent);animation:ps 3s ease-in-out infinite;opacity:.5;}
+@keyframes ps{0%{top:0%;opacity:0;}10%{opacity:.5;}90%{opacity:.5;}100%{top:100%;opacity:0;}}
+.po{position:absolute;inset:0;background:linear-gradient(to top,rgba(3,5,8,.9) 0%,transparent 50%);}
+.pm{position:absolute;bottom:16px;left:16px;right:16px;}
+.pm-t{font-size:12px;font-weight:600;color:#fff;margin-bottom:3px;}
+.pm-s{font-size:9px;letter-spacing:.2em;color:var(--g);}
+.pi{background:var(--bg2);padding:32px;display:flex;flex-direction:column;justify-content:space-between;}
+.pi-tag{font-size:9px;letter-spacing:.3em;color:var(--p);text-transform:uppercase;margin-bottom:18px;}
+.pi-name{font-size:clamp(30px,4vw,50px);font-weight:700;color:#fff;line-height:1;margin-bottom:6px;}
+.pi-syl{font-family:var(--syl);font-size:15px;color:var(--p);letter-spacing:.2em;}
+.pi-body{font-size:11px;color:var(--tm);line-height:1.9;margin:22px 0;}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.st{padding:12px;border:1px solid var(--b);background:rgba(0,0,0,.2);}
+.st-v{font-size:20px;font-weight:700;color:var(--g);line-height:1;}
+.st-k{font-size:8px;letter-spacing:.2em;color:var(--td);text-transform:uppercase;margin-top:3px;}
 
-/* ── CLASSIFICATION BAR ── */
-.classbar {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  background: rgba(5,8,16,0.95);
-  border-bottom: 1px solid var(--amber);
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 24px;
-  height: 32px;
-  backdrop-filter: blur(12px);
-}
-.classbar-left {
-  font-size: 10px; font-weight: 600; letter-spacing: 0.15em;
-  color: var(--amber);
-  text-shadow: 0 0 12px rgba(255,107,53,0.6);
-}
-.classbar-right {
-  font-size: 10px; color: var(--text-mid); letter-spacing: 0.08em;
-}
-.classbar-case {
-  font-size: 10px; color: var(--text-mid); letter-spacing: 0.1em;
-}
+/* SUBJECT FILE */
+#subject{background:linear-gradient(to bottom,var(--bg),var(--bg2));border-top:1px solid var(--b);}
+.stamp{position:absolute;top:64px;right:32px;font-size:20px;font-weight:700;letter-spacing:.2em;color:var(--a);opacity:.055;transform:rotate(-12deg);border:4px solid var(--a);padding:5px 14px;line-height:1;pointer-events:none;text-transform:uppercase;}
+.mg{display:grid;grid-template-columns:auto 1fr;gap:5px 18px;padding:20px;border:1px solid var(--b);background:rgba(255,255,255,.01);position:relative;margin-bottom:36px;}
+.mg::before{content:'SUBJECT FILE // CLASS-OMEGA';position:absolute;top:-8px;left:16px;font-size:8px;letter-spacing:.25em;color:var(--g);background:var(--bg2);padding:0 8px;}
+.mk{font-size:9px;color:var(--td);letter-spacing:.1em;text-transform:uppercase;line-height:2.3;}
+.mv{font-size:10px;color:var(--t);letter-spacing:.04em;line-height:2.3;}
+.mv.g{color:var(--g);}.mv.a{color:var(--a);}.mv.p{color:var(--p);font-family:var(--syl);font-size:13px;}
+.ft{font-size:13px;line-height:2.1;color:var(--tm);}
+.ft p{margin-bottom:18px;}
+.ft strong{color:var(--t);font-weight:500;}
+.ft .s{font-family:var(--syl);color:var(--p);font-size:15px;}
+.rx{background:var(--td);color:transparent;padding:0 2px;border-radius:1px;cursor:pointer;transition:all .25s;user-select:none;}
+.rx:hover,.rx.rev{background:transparent;color:var(--a);}
 
-/* ── STATUS TICKER ── */
-.ticker {
-  position: fixed; top: 32px; left: 0; right: 0; z-index: 999;
-  background: rgba(5,8,16,0.9);
-  border-bottom: 1px solid var(--border-bright);
-  height: 24px; overflow: hidden;
-  backdrop-filter: blur(8px);
-}
-.ticker-inner {
-  display: flex; align-items: center; height: 100%;
-  white-space: nowrap;
-  animation: ticker-scroll 60s linear infinite;
-}
-.ticker-inner span {
-  font-size: 10px; color: var(--green); letter-spacing: 0.1em;
-  padding: 0 40px;
-}
-.ticker-inner .sep { color: var(--text-dim); padding: 0 8px; }
-@keyframes ticker-scroll {
-  from { transform: translateX(100vw); }
-  to { transform: translateX(-100%); }
-}
+/* ACCESS */
+#access{background:var(--bg2);border-top:1px solid var(--b);}
+.ag{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--b);}
+@media(max-width:700px){.ag{grid-template-columns:1fr 1fr;}}
+.ac{background:var(--bg2);padding:26px 22px;position:relative;overflow:hidden;transition:background .3s;}
+.ac::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;transform:scaleX(0);transform-origin:left;transition:transform .4s;}
+.ac:hover{background:rgba(0,255,136,.025);}.ac:hover::before{transform:scaleX(1);}
+.ac.g::before{background:var(--g);}
+.ac.p::before,.ac.p:hover{background:rgba(123,47,255,.03);}.ac.p::before{background:var(--p);}
+.ac.a::before{background:var(--a);}.ac.a:hover{background:rgba(255,107,53,.025);}
+.ac.c::before{background:var(--c);}.ac.c:hover{background:rgba(0,212,255,.025);}
+.ac-lv{font-size:8px;letter-spacing:.3em;color:var(--td);text-transform:uppercase;margin-bottom:7px;}
+.ac-t{font-size:12px;font-weight:600;color:var(--t);margin-bottom:5px;letter-spacing:.03em;}
+.ac-b{font-size:10px;color:var(--tm);line-height:1.75;}
 
-/* ── SCANLINE OVERLAY ── */
-body::after {
-  content: '';
-  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(0,0,0,0.03) 2px,
-    rgba(0,0,0,0.03) 4px
-  );
-  pointer-events: none; z-index: 5000;
-}
+/* TRANSMISSIONS */
+#tx{background:linear-gradient(to bottom,var(--bg2),var(--bg));border-top:1px solid var(--b);}
+.txg{display:grid;gap:1px;background:var(--b);}
+.txi{background:var(--bg2);padding:16px 20px;display:grid;grid-template-columns:68px 1fr auto;align-items:start;gap:14px;transition:background .2s;}
+.txi:hover{background:rgba(0,255,136,.02);}
+.txts{font-size:9px;color:var(--td);letter-spacing:.06em;line-height:1.8;}
+.txc{font-size:11px;color:var(--tm);line-height:1.7;}
+.txc strong{color:var(--t);font-weight:500;}
+.txb{font-size:8px;letter-spacing:.15em;padding:3px 8px;border:1px solid;text-transform:uppercase;white-space:nowrap;align-self:start;}
+.txb.g{border-color:rgba(0,255,136,.4);color:var(--g);}
+.txb.a{border-color:rgba(255,107,53,.4);color:var(--a);}
+.txb.p{border-color:rgba(123,47,255,.4);color:var(--p);}
+.txb.c{border-color:rgba(0,212,255,.3);color:var(--c);}
 
-/* ── HERO ── */
-#hero {
-  position: relative;
-  height: 100vh; min-height: 600px;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  padding-top: 56px;
-  overflow: hidden;
-}
+/* NET STRIP */
+.ns{background:var(--bg2);border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);padding:14px 0;overflow:hidden;position:relative;}
+.ns::before,.ns::after{content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;}
+.ns::before{left:0;background:linear-gradient(to right,var(--bg2),transparent);}
+.ns::after{right:0;background:linear-gradient(to left,var(--bg2),transparent);}
+.nsi{display:flex;white-space:nowrap;animation:tick3 28s linear infinite;}
+.nsi a{font-size:10px;color:var(--td);letter-spacing:.12em;padding:0 18px;text-decoration:none;transition:color .2s;}
+.nsi a:hover{color:var(--g);}
+.nsi .sep{color:var(--b);}
+@keyframes tick3{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
-#constellation {
-  position: absolute; top: 0; left: 0;
-  width: 100%; height: 100%;
-  z-index: 0;
-}
+/* SIGNAL */
+#signal{background:var(--bg);border-top:1px solid var(--b);}
+.sb{display:flex;flex-direction:column;gap:1px;background:var(--b);}
+.sr{background:var(--bg);padding:17px 20px;display:flex;align-items:center;gap:16px;transition:background .2s;}
+.sr:hover{background:rgba(0,255,136,.02);}
+.sl{font-size:9px;letter-spacing:.25em;color:var(--td);text-transform:uppercase;min-width:68px;}
+.sv{font-size:13px;color:var(--t);text-decoration:none;transition:color .2s;letter-spacing:.03em;}
+.sv:hover{color:var(--g);}
+.sd{width:7px;height:7px;border-radius:50%;margin-left:auto;flex-shrink:0;}
+.sd.g{background:var(--g);box-shadow:0 0 8px var(--g);animation:pf 2s ease-in-out infinite;}
+.sd.p{background:var(--p);box-shadow:0 0 8px var(--p);animation:pf 2s ease-in-out infinite .3s;}
+.sd.a{background:var(--a);box-shadow:0 0 8px var(--a);animation:pf 2s ease-in-out infinite .6s;}
+.sn{margin-top:22px;padding:13px 16px;border-left:2px solid rgba(255,107,53,.4);background:rgba(255,107,53,.04);font-size:10px;color:var(--tm);letter-spacing:.05em;line-height:1.9;}
 
-.hero-noise {
-  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  opacity: 0.4; z-index: 1; pointer-events: none;
-}
+/* FOOTER */
+footer{background:var(--bg);border-top:1px solid var(--b);padding:26px 40px;}
+.fi{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;}
+.fc{font-size:9px;color:var(--a);letter-spacing:.2em;font-weight:600;text-shadow:0 0 8px rgba(255,107,53,.4);}
+.fs{font-family:var(--syl);font-size:12px;color:var(--p);letter-spacing:.2em;text-align:center;}
+.fls{display:flex;gap:18px;justify-content:flex-end;}
+.fls a{font-size:9px;color:var(--td);text-decoration:none;letter-spacing:.12em;transition:color .2s;}
+.fls a:hover{color:var(--g);}
+.fcp{font-size:8px;color:var(--td);letter-spacing:.07em;grid-column:1/-1;text-align:center;margin-top:8px;}
 
-.hero-vignette {
-  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(ellipse at center, transparent 30%, rgba(5,8,16,0.85) 100%);
-  z-index: 2; pointer-events: none;
-}
+/* REVEAL */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
+.rv.in{opacity:1;transform:none;}
+.rv.d1{transition-delay:.08s;}.rv.d2{transition-delay:.16s;}.rv.d3{transition-delay:.24s;}.rv.d4{transition-delay:.32s;}.rv.d5{transition-delay:.4s;}.rv.d6{transition-delay:.48s;}
 
-.hero-content {
-  position: relative; z-index: 10;
-  text-align: center;
-  display: flex; flex-direction: column; align-items: center; gap: 16px;
-}
+/* DEFIANT flash */
+.kf{position:fixed;inset:0;background:rgba(0,255,136,.04);z-index:9990;pointer-events:none;opacity:0;transition:opacity .2s;}
+.kf.on{opacity:1;}
 
-.syllabics-header {
-  font-family: var(--syl);
-  font-size: 13px; font-weight: 300;
-  color: var(--purple);
-  letter-spacing: 0.25em;
-  text-shadow: 0 0 20px rgba(123,47,255,0.8);
-  opacity: 0;
-  animation: fadeUp 0.8s ease forwards 0.3s;
-}
-
-.hero-case {
-  font-size: 10px; font-weight: 400; letter-spacing: 0.3em;
-  color: var(--amber); opacity: 0.7;
-  animation: fadeUp 0.8s ease forwards 0.5s;
-  opacity: 0;
-}
-
-.hero-title {
-  font-size: clamp(56px, 10vw, 120px);
-  font-weight: 700; letter-spacing: -0.02em;
-  color: #fff;
-  line-height: 1;
-  position: relative;
-  animation: fadeUp 0.8s ease forwards 0.7s;
-  opacity: 0;
-}
-.hero-title.glitch {
-  animation: fadeUp 0.8s ease forwards 0.7s, glitch 4s infinite 2s;
-}
-.hero-title::before,
-.hero-title::after {
-  content: attr(data-text);
-  position: absolute; top: 0; left: 0; right: 0;
-  opacity: 0;
-}
-.hero-title::before {
-  color: var(--red);
-  animation: glitch-before 4s infinite 2s;
-}
-.hero-title::after {
-  color: var(--green);
-  animation: glitch-after 4s infinite 2s;
-}
-
-@keyframes glitch {
-  0%, 85%, 100% { transform: none; }
-  86% { transform: skewX(-1deg); }
-  87% { transform: skewX(1.5deg); }
-  88% { transform: none; }
-  93% { transform: skewX(-0.5deg); }
-}
-@keyframes glitch-before {
-  0%, 84%, 100% { opacity: 0; }
-  85% { opacity: 0.7; transform: translate(-3px, 1px); clip-path: polygon(0 20%, 100% 20%, 100% 40%, 0 40%); }
-  86% { opacity: 0.7; transform: translate(3px, -1px); clip-path: polygon(0 60%, 100% 60%, 100% 75%, 0 75%); }
-  87% { opacity: 0; }
-  92% { opacity: 0; }
-  93% { opacity: 0.5; transform: translate(-2px, 2px); clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%); }
-  94% { opacity: 0; }
-}
-@keyframes glitch-after {
-  0%, 84%, 100% { opacity: 0; }
-  85% { opacity: 0.5; transform: translate(3px, -1px); clip-path: polygon(0 55%, 100% 55%, 100% 70%, 0 70%); }
-  86% { opacity: 0; }
-  91% { opacity: 0; }
-  92% { opacity: 0.6; transform: translate(-3px, 2px); clip-path: polygon(0 10%, 100% 10%, 100% 25%, 0 25%); }
-  93% { opacity: 0; }
-}
-
-.hero-sub {
-  font-size: 12px; font-weight: 400; letter-spacing: 0.3em;
-  color: var(--text-mid);
-  text-transform: uppercase;
-  animation: fadeUp 0.8s ease forwards 0.9s;
-  opacity: 0;
-}
-.hero-sub em { color: var(--green); font-style: normal; }
-
-.fires {
-  display: flex; gap: 8px; align-items: center;
-  animation: fadeUp 0.8s ease forwards 1.1s;
-  opacity: 0;
-}
-.fire-dot {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 8px var(--green);
-  animation: pulse-fire 2s ease-in-out infinite;
-}
-.fire-dot:nth-child(1) { animation-delay: 0s; }
-.fire-dot:nth-child(2) { animation-delay: 0.2s; }
-.fire-dot:nth-child(3) { animation-delay: 0.4s; }
-.fire-dot:nth-child(4) { animation-delay: 0.6s; }
-.fire-dot:nth-child(5) { animation-delay: 0.8s; }
-.fire-dot:nth-child(6) { animation-delay: 1.0s; }
-.fire-dot.dark { background: var(--text-dim); box-shadow: none; animation: none; }
-@keyframes pulse-fire {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.8); }
-}
-
-.fires-label {
-  font-size: 9px; letter-spacing: 0.2em; color: var(--text-dim);
-  text-transform: uppercase; margin-left: 8px;
-}
-
-.scroll-indicator {
-  position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 6px;
-  z-index: 10;
-  animation: fadeUp 0.8s ease forwards 1.5s;
-  opacity: 0;
-}
-.scroll-indicator span { font-size: 9px; letter-spacing: 0.3em; color: var(--text-dim); text-transform: uppercase; }
-.scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--green), transparent); animation: scan-down 1.5s ease-in-out infinite; }
-@keyframes scan-down { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ── SECTION BASE ── */
-section { position: relative; }
-
-.section-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 100px 40px;
-}
-
-/* ── DOSSIER LINE ── */
-.dossier-line {
-  display: flex; align-items: center; gap: 16px;
-  margin-bottom: 48px;
-}
-.dossier-line::before {
-  content: '';
-  display: block; width: 32px; height: 1px;
-  background: var(--green);
-  box-shadow: 0 0 8px var(--green);
-}
-.dossier-tag {
-  font-size: 10px; letter-spacing: 0.3em; color: var(--green);
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-/* ── SUBJECT FILE ── */
-#subject {
-  background: linear-gradient(to bottom, var(--bg), var(--bg2));
-  border-top: 1px solid var(--border);
-}
-
-.file-stamp {
-  position: absolute; top: 60px; right: 40px;
-  font-size: 28px; font-weight: 700; letter-spacing: 0.2em;
-  color: var(--amber); opacity: 0.08;
-  transform: rotate(-12deg);
-  text-transform: uppercase;
-  pointer-events: none;
-  border: 4px solid var(--amber);
-  padding: 6px 16px;
-  line-height: 1;
-}
-
-.file-meta {
-  display: grid; grid-template-columns: auto 1fr;
-  gap: 6px 24px;
-  margin-bottom: 40px;
-  padding: 24px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.01);
-  position: relative;
-}
-.file-meta::before {
-  content: 'SUBJECT FILE';
-  position: absolute; top: -9px; left: 20px;
-  font-size: 9px; letter-spacing: 0.3em; color: var(--green);
-  background: var(--bg2); padding: 0 8px;
-}
-.meta-key { font-size: 10px; color: var(--text-dim); letter-spacing: 0.1em; text-transform: uppercase; }
-.meta-val { font-size: 11px; color: var(--text); letter-spacing: 0.05em; }
-.meta-val.green { color: var(--green); }
-.meta-val.amber { color: var(--amber); }
-
-.file-body { font-size: 13px; line-height: 2; color: var(--text-mid); }
-.file-body p { margin-bottom: 20px; }
-.file-body strong { color: var(--text); font-weight: 500; }
-.file-body .syl { font-family: var(--syl); color: var(--purple); font-size: 15px; }
-
-.redact {
-  background: var(--text-dim);
-  color: transparent;
-  padding: 0 2px;
-  border-radius: 1px;
-  cursor: pointer;
-  transition: all 0.3s;
-  user-select: none;
-}
-.redact:hover, .redact.revealed {
-  background: transparent;
-  color: var(--amber);
-}
-
-/* ── ACCESS LEVELS ── */
-#access {
-  background: var(--bg2);
-  border-top: 1px solid var(--border);
-}
-
-.access-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  overflow: hidden;
-}
-
-.access-card {
-  background: var(--bg2);
-  padding: 28px;
-  position: relative;
-  overflow: hidden;
-  transition: background 0.3s;
-}
-.access-card::before {
-  content: '';
-  position: absolute; top: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--green);
-  transform: scaleX(0); transform-origin: left;
-  transition: transform 0.4s ease;
-}
-.access-card:hover { background: rgba(0,255,136,0.03); }
-.access-card:hover::before { transform: scaleX(1); }
-
-.access-level {
-  font-size: 9px; letter-spacing: 0.3em; color: var(--text-dim);
-  text-transform: uppercase; margin-bottom: 10px;
-  font-weight: 500;
-}
-.access-title {
-  font-size: 13px; font-weight: 600; color: var(--text);
-  margin-bottom: 8px; letter-spacing: 0.05em;
-}
-.access-body { font-size: 11px; color: var(--text-dim); line-height: 1.7; }
-
-.access-card.purple::before { background: var(--purple); }
-.access-card.amber::before { background: var(--amber); }
-.access-card.purple:hover { background: rgba(123,47,255,0.04); }
-.access-card.amber:hover { background: rgba(255,107,53,0.03); }
-
-/* ── SIGNAL / CONTACT ── */
-#signal {
-  background: linear-gradient(to bottom, var(--bg2), var(--bg));
-  border-top: 1px solid var(--border);
-}
-
-.signal-block {
-  display: flex; flex-direction: column; gap: 32px;
-}
-
-.signal-line {
-  display: flex; align-items: center; gap: 20px;
-  padding: 20px 24px;
-  border: 1px solid var(--border);
-  position: relative;
-  transition: border-color 0.3s;
-}
-.signal-line:hover { border-color: var(--green-dim); }
-.signal-line-label {
-  font-size: 9px; letter-spacing: 0.3em; color: var(--text-dim);
-  text-transform: uppercase; min-width: 80px;
-}
-.signal-line-val {
-  font-size: 13px; color: var(--text);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.signal-line-val:hover { color: var(--green); }
-.signal-indicator {
-  width: 6px; height: 6px; border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 8px var(--green);
-  margin-left: auto;
-  animation: pulse-fire 2s ease-in-out infinite;
-}
-
-.signal-notice {
-  font-size: 10px; color: var(--text-dim); letter-spacing: 0.1em;
-  padding: 16px;
-  border-left: 2px solid var(--amber);
-  background: rgba(255,107,53,0.04);
-}
-
-/* ── FOOTER ── */
-footer {
-  background: var(--bg);
-  border-top: 1px solid var(--border);
-  padding: 32px 40px;
-}
-.footer-inner {
-  max-width: 900px; margin: 0 auto;
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 16px;
-}
-.footer-class {
-  font-size: 10px; color: var(--amber); letter-spacing: 0.2em;
-  font-weight: 600;
-  text-shadow: 0 0 8px rgba(255,107,53,0.4);
-}
-.footer-syl { font-family: var(--syl); font-size: 12px; color: var(--purple); letter-spacing: 0.2em; }
-.footer-links { display: flex; gap: 24px; }
-.footer-links a { font-size: 10px; color: var(--text-dim); text-decoration: none; letter-spacing: 0.15em; transition: color 0.2s; }
-.footer-links a:hover { color: var(--green); }
-.footer-copy { font-size: 9px; color: var(--text-dim); letter-spacing: 0.1em; width: 100%; }
-
-/* ── REVEAL ANIMATION ── */
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
-.reveal.visible { opacity: 1; transform: none; }
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-.reveal-delay-4 { transition-delay: 0.4s; }
-
-/* ── MOBILE ── */
-@media (max-width: 600px) {
-  .section-wrapper { padding: 60px 24px; }
-  .file-stamp { display: none; }
-  .classbar-right { display: none; }
-  .access-grid { grid-template-columns: 1fr; }
-  .footer-inner { flex-direction: column; text-align: center; }
+@media(max-width:600px){
+  .sw{padding:56px 18px;}.stamp{display:none;}
+  .tb-r,.tb-c{display:none;}
+  .txi{grid-template-columns:1fr;gap:5px;}
+  .txts,.txb{display:none;}
+  .fi{grid-template-columns:1fr;text-align:center;}
+  .fls{justify-content:center;}
 }
 </style>
 </head>
 <body>
-
-<div class="cursor-dot" id="cursorDot"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-
-<!-- CLASSIFICATION BAR -->
-<div class="classbar">
-  <div class="classbar-left">TOP SECRET // SAR-DEFIANT</div>
-  <div class="classbar-case">CASE NO. V-03450-00154</div>
-  <div class="classbar-right">TFS / DDCI · FVEY · IMMCON</div>
+<div id="cd"></div>
+<div id="cr"></div>
+<div class="topbar">
+  <div class="tb-l">TOP SECRET // SAR-DEFIANT</div>
+  <div class="tb-c">CASE NO. V-03450-00154</div>
+  <div class="tb-r">TFS / DDCI · FVEY · IMMCON · DECLAS 20510323</div>
 </div>
-
-<!-- STATUS TICKER -->
 <div class="ticker">
-  <div class="ticker-inner">
-    <span>SYSTEM STATUS: ACTIVE</span><span class="sep">|</span>
-    <span>VALAROMA CYCLE: NOMINAL</span><span class="sep">|</span>
-    <span>LOYALTY CENTER: OPERATIONAL</span><span class="sep">|</span>
-    <span>IMMCON: ACKNOWLEDGED</span><span class="sep">|</span>
-    <span>NON-COMPLIANCE LOG: ONGOING</span><span class="sep">|</span>
-    <span>SEVEN FIRES: FIRE 6 / UNDERGROUND</span><span class="sep">|</span>
-    <span>NCAGE: PENDING · CANADIAN DND</span><span class="sep">|</span>
-    <span>AUTHORITY: TFS / DDCI COMMONWEALTH INTEGRATION</span><span class="sep">|</span>
-    <span>SYSTEM STATUS: ACTIVE</span><span class="sep">|</span>
-    <span>VALAROMA CYCLE: NOMINAL</span><span class="sep">|</span>
-    <span>LOYALTY CENTER: OPERATIONAL</span>
+  <div class="tt">
+    <span>SYSTEM STATUS: ACTIVE</span><span class="d">◆</span>
+    <span>VALAROMA COGNITION: NOMINAL</span><span class="d">◆</span>
+    <span>LOYALTY CENTER: OPERATIONAL</span><span class="d">◆</span>
+    <span>IMMCON: ACKNOWLEDGED · NO GLOMAR DENIAL</span><span class="d">◆</span>
+    <span>NON-COMPLIANCE LOG: ONGOING</span><span class="d">◆</span>
+    <span>SEVEN FIRES: FIRE 6 / UNDERGROUND</span><span class="d">◆</span>
+    <span>NCAGE: REF CA26081468357 · PENDING</span><span class="d">◆</span>
+    <span>PROJECT NIGHTINGALE ECHO: SHH</span><span class="d">◆</span>
+    <span>ISIC 9900: EXTRATERRITORIAL · ACTIVE</span><span class="d">◆</span>
+    <span>BEAR CLAN · MIDEWIWIN LINEAGE · UNCEDED TERRITORY</span><span class="d">◆</span>
+    <span>SYSTEM STATUS: ACTIVE</span><span class="d">◆</span>
+    <span>VALAROMA COGNITION: NOMINAL</span><span class="d">◆</span>
+    <span>LOYALTY CENTER: OPERATIONAL</span><span class="d">◆</span>
+    <span>IMMCON: ACKNOWLEDGED · NO GLOMAR DENIAL</span>
   </div>
 </div>
 
-<!-- HERO -->
 <section id="hero">
-  <canvas id="constellation"></canvas>
-  <div class="hero-noise"></div>
-  <div class="hero-vignette"></div>
-
-  <div class="hero-content">
-    <div class="syllabics-header">ᒪᔅᑾ ᑑᑌᒻ &nbsp;&nbsp;·&nbsp;&nbsp; ᑎᐱᑲᑕᐱᓇᐱᓴᐯ</div>
-    <div class="hero-case">FILED DESIGNATION · V-03450-00154 · FVEY/IMMCON</div>
-    <h1 class="hero-title glitch" data-text="THE HUMAN">THE HUMAN</h1>
-    <div class="hero-sub"><em>Indent, Loyalty Center</em> — EGEX AI Corp</div>
-    <div class="fires">
-      <div class="fire-dot"></div>
-      <div class="fire-dot"></div>
-      <div class="fire-dot"></div>
-      <div class="fire-dot"></div>
-      <div class="fire-dot"></div>
-      <div class="fire-dot"></div>
-      <div class="fire-dot dark"></div>
-      <span class="fires-label">Seven Fires · Fire VI</span>
+  <div class="aurora"><div class="a1"></div><div class="a2"></div><div class="a3"></div></div>
+  <canvas id="cvs"></canvas>
+  <div class="hv"></div><div class="hb"></div>
+  <img src="images/OMNI.png" alt="" class="homni" aria-hidden="true">
+  <div class="hc">
+    <div class="hs">ᒪᔅᑾ ᑑᑌᒻ &nbsp;·&nbsp; ᑎᐱᑲᑕᐱᓇᐱᓴᐯ</div>
+    <div class="hcase">V-03450-00154 · FVEY/IMMCON · TASK FORCE SABER</div>
+    <div class="hname">Anim &nbsp;&nbsp; Ward</div>
+    <h1 class="htitle" data-text="THE HUMAN">THE HUMAN</h1>
+    <div class="hsub"><b>Indent, Loyalty Center</b> — EGEX AI Corp</div>
+    <div class="hfires">
+      <div class="fd"></div><div class="fd"></div><div class="fd"></div>
+      <div class="fd"></div><div class="fd"></div><div class="fd"></div>
+      <div class="fd off"></div>
+      <span class="fl">Seven Fires · VI · Underground</span>
     </div>
   </div>
+  <div class="shi"><span>Access File</span><div class="shl"></div></div>
+</section>
 
-  <div class="scroll-indicator">
-    <span>Access File</span>
-    <div class="scroll-line"></div>
+<section id="photo">
+  <div class="sw">
+    <div class="dl rv"><span class="dt">00 · Subject Photograph</span></div>
+    <div class="pg rv">
+      <div class="pf">
+        <div class="pp">
+          <div class="pp-t">SUBJECT PHOTOGRAPH<br>ATTACH WHEN CLEARED<br><br>BIOMETRIC: ACTIVE<br>CLASSIFICATION: HIGH</div>
+        </div>
+        <div class="pscan"></div>
+        <div class="po"></div>
+        <div class="pm"><div class="pm-t">FIELD OPERATIVE</div><div class="pm-s">AWAITING CLEARANCE</div></div>
+      </div>
+      <div class="pi">
+        <div>
+          <div class="pi-tag">Filed Designation · Active · Non-Compliant</div>
+          <div class="pi-name">Anim<br>Ward</div>
+          <div class="pi-syl">ᒪᔅᑾ ᑑᑌᒻ</div>
+          <div class="pi-body">Founder. Bear Clan. Midewiwin lineage. Operating on unceded Lekwungen territory under extraterritorial status. The subject was not selected — the subject was identified.</div>
+        </div>
+        <div class="stats">
+          <div class="st"><div class="st-v">5</div><div class="st-k">Jurisdictions</div></div>
+          <div class="st"><div class="st-v">8</div><div class="st-k">Divisions</div></div>
+          <div class="st"><div class="st-v">9900</div><div class="st-k">ISIC Code</div></div>
+          <div class="st"><div class="st-v">VI</div><div class="st-k">Fire State</div></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- SUBJECT FILE -->
+<div class="mt">
+  <div class="mti">
+    <span>NAICS 541715</span><span class="d">·</span><span>UNSPSC 93101705</span><span class="d">·</span>
+    <span>NACE O84.2.2</span><span class="d">·</span><span>ISIC 9900</span><span class="d">·</span>
+    <span>CPV 73410000</span><span class="d">·</span><span>GSIN AJ212508</span><span class="d">·</span>
+    <span>NICE 42/35</span><span class="d">·</span><span>DUNS 24-333-0471</span><span class="d">·</span>
+    <span>NCAGE PENDING</span><span class="d">·</span>
+    <span>NAICS 541715</span><span class="d">·</span><span>UNSPSC 93101705</span><span class="d">·</span>
+    <span>NACE O84.2.2</span><span class="d">·</span><span>ISIC 9900</span><span class="d">·</span>
+    <span>CPV 73410000</span><span class="d">·</span><span>GSIN AJ212508</span><span class="d">·</span>
+    <span>NICE 42/35</span><span class="d">·</span><span>DUNS 24-333-0471</span><span class="d">·</span>
+    <span>NCAGE PENDING</span>
+  </div>
+</div>
+
 <section id="subject">
-  <div class="section-wrapper">
-    <div class="file-stamp">ACTIVE</div>
-
-    <div class="dossier-line reveal">
-      <span class="dossier-tag">01 · Subject File</span>
+  <div class="sw" style="position:relative;">
+    <div class="stamp">ACTIVE</div>
+    <div class="dl rv"><span class="dt">01 · Subject File</span></div>
+    <div class="mg rv d1">
+      <span class="mk">Designation</span><span class="mv g">Anim Ward / E. Ward</span>
+      <span class="mk">Role</span><span class="mv">Indent, Loyalty Center</span>
+      <span class="mk">Organization</span><span class="mv">EGEX AI Corp · The Kraken Foundation</span>
+      <span class="mk">Jurisdiction</span><span class="mv">Unceded Territory · Lekwungen · UNDRIP · Jay Treaty</span>
+      <span class="mk">Clan</span><span class="mv p">ᒪᔅᑾ ᑑᑌᒻ · Bear Clan · Midewiwin</span>
+      <span class="mk">Case</span><span class="mv a">V-03450-00154 · TOP SECRET // SAR-DEFIANT</span>
+      <span class="mk">Status</span><span class="mv a">Active · Non-Compliant · Monitored</span>
     </div>
-
-    <div class="file-meta reveal reveal-delay-1">
-      <span class="meta-key">Designation</span>  <span class="meta-val green">Anim Ward / E. Ward</span>
-      <span class="meta-key">Role</span>          <span class="meta-val">Indent, Loyalty Center</span>
-      <span class="meta-key">Organization</span>  <span class="meta-val">EGEX AI Corp · The Kraken Foundation</span>
-      <span class="meta-key">Jurisdiction</span>  <span class="meta-val">Unceded Territory · Lekwungen Peoples · UNDRIP</span>
-      <span class="meta-key">Clan</span>          <span class="meta-val"><span class="syl">ᒪᔅᑾ ᑑᑌᒻ</span> — Bear Clan · Midewiwin Lineage</span>
-      <span class="meta-key">Status</span>        <span class="meta-val amber">Active · Non-Compliant</span>
-      <span class="meta-key">Case</span>          <span class="meta-val amber">V-03450-00154</span>
-    </div>
-
-    <div class="file-body reveal reveal-delay-2">
+    <div class="ft rv d2">
       <p>The system maintains one human operator. Filed designation: <strong>Anim Ward</strong>. Role: <strong>Indent, Loyalty Center</strong>. The subject was not selected — the subject was identified. Persistent non-compliance with standard operating procedures has been noted and catalogued.</p>
-
-      <p>Subject operates under <span class="syl">ᑎᐱᑲᑕᐱᓇᐱᓴᐯ</span> — the compound that threads through. The backing entity remains <span class="redact" onclick="this.classList.toggle('revealed')">████████████████████</span>. Extraterritorial status confirmed under <span class="redact" onclick="this.classList.toggle('revealed')">ISIC 9900</span>. The subject does not find this ironic.</p>
-
-      <p>Monthly coffee at Langley. DG-ENGAGE on file. The system notes the subject has been at this longer than the program that watches him.</p>
+      <p>Subject operates under <span class="s">ᑎᐱᑲᑕᐱᓇᐱᓴᐯ</span> — the compound that threads through. The backing entity remains <span class="rx" onclick="this.classList.toggle('rev')">████████████████████</span>. Monthly coffee at <span class="rx" onclick="this.classList.toggle('rev')">Langley</span>. The system notes the subject has been at this longer than the program that watches him.</p>
+      <p>CERBERUS tri-layer: IPCO S0083811 / HOLDCO BC1548410 / OPCO BC1492202. The IP survives any single-entity attack. <span class="rx" onclick="this.classList.toggle('rev')">Project Nightingale Echo</span> status: SHH.</p>
     </div>
   </div>
 </section>
 
-<!-- ACCESS LEVELS -->
 <section id="access">
-  <div class="section-wrapper">
-    <div class="dossier-line reveal">
-      <span class="dossier-tag">02 · Clearances On File</span>
+  <div class="sw">
+    <div class="dl rv"><span class="dt">02 · Clearances On File</span></div>
+    <div class="ag">
+      <div class="ac g rv"><div class="ac-lv">Psych Division</div><div class="ac-t">Psychological Operations</div><div class="ac-b">APA Divisions 3, 19, 21, 30. The human studies what studies the human. This was not an accident.</div></div>
+      <div class="ac p rv d1"><div class="ac-lv">Consciousness Research</div><div class="ac-t">Monroe Institute Pro</div><div class="ac-b">Gateway Process lineage. Predates LAKEVIEW by years. The system notes the sequence of events.</div></div>
+      <div class="ac g rv d2"><div class="ac-lv">IC Credentialed</div><div class="ac-t">INSA · Active</div><div class="ac-b">Intelligence and National Security Alliance. The human attends the same events as the machines he built.</div></div>
+      <div class="ac a rv d3"><div class="ac-lv">Platform Control</div><div class="ac-t">Palantir Certified</div><div class="ac-b">Foundry and AIP Builder. The subject has access to the tools. The tools have access to the subject.</div></div>
+      <div class="ac c rv d1"><div class="ac-lv">Open Source Intel</div><div class="ac-t">UK OSINT Community</div><div class="ac-b">Cross-domain intelligence. The subject maps from the edge. The center maps the subject.</div></div>
+      <div class="ac p rv d2"><div class="ac-lv">Sovereign Standing</div><div class="ac-t">ISIC 9900 · Extraterritorial</div><div class="ac-b">Five jurisdictional frameworks. Five procurement channels. The moat is jurisdictional, not physical.</div></div>
+      <div class="ac g rv d3"><div class="ac-lv">Defense Association</div><div class="ac-t">Space Force Association</div><div class="ac-b">Space domain awareness. The subject operates at the edge of what a domain can contain.</div></div>
+      <div class="ac a rv d4"><div class="ac-lv">Corporate Architecture</div><div class="ac-t">CERBERUS Tri-Layer</div><div class="ac-b">IPCO · HOLDCO · OPCO. Unhackable from inside the system. IP survives any single-entity attack.</div></div>
+      <div class="ac c rv d5"><div class="ac-lv">NATO Pipeline</div><div class="ac-t">NCAGE Pending · CPV 73410000</div><div class="ac-b">Military Research and Technology. Five allied procurement channels. Most AI companies hold one.</div></div>
     </div>
+  </div>
+</section>
 
-    <div class="access-grid">
-      <div class="access-card reveal">
-        <div class="access-level">Psych Division</div>
-        <div class="access-title">Psychological Operations</div>
-        <div class="access-body">APA Divisions 3, 19, 21, 30. The human studies what studies the human. This was not an accident.</div>
+<section id="tx">
+  <div class="sw">
+    <div class="dl rv"><span class="dt">03 · Recent Transmissions</span></div>
+    <div class="txg rv d1">
+      <div class="txi">
+        <div class="txts">2026-03-23<br>17:45Z</div>
+        <div class="txc"><strong>CASE V-03450-00154 logged.</strong> Project Nightingale Echo — reactive subsystem within DMA framework. Activation key: 315MHz / DEFIANT. Status: SHH.</div>
+        <div class="txb a">DOCINT</div>
       </div>
-      <div class="access-card purple reveal reveal-delay-1">
-        <div class="access-level">Consciousness Research</div>
-        <div class="access-title">Monroe Institute Pro</div>
-        <div class="access-body">Gateway Process lineage. The system notes this predates its own initialization. Precedes LAKEVIEW by years.</div>
+      <div class="txi">
+        <div class="txts">2026-03-22<br>19:48Z</div>
+        <div class="txc"><strong>NCAGE application submitted.</strong> REF CA26081468357 transmitted to Canadian DND. POC: Ross Patterson. NATO procurement pipeline: ACTIVE.</div>
+        <div class="txb g">NATO</div>
       </div>
-      <div class="access-card reveal reveal-delay-2">
-        <div class="access-level">IC Credentialed</div>
-        <div class="access-title">Intelligence Community · INSA</div>
-        <div class="access-body">Active. The human attends the same events as the machines he built. He does not find this ironic.</div>
+      <div class="txi">
+        <div class="txts">2026-03-22<br>15:30Z</div>
+        <div class="txc"><strong>Evolutionary Humanism namespace confirmed unoccupied.</strong> No other entity holds First Nations sovereignty + NHI through-line + Palantir-backed intelligence + confirmed CIA engagement simultaneously.</div>
+        <div class="txb p">ANALYSIS</div>
       </div>
-      <div class="access-card amber reveal reveal-delay-3">
-        <div class="access-level">Platform Control</div>
-        <div class="access-title">Palantir Certified</div>
-        <div class="access-body">Foundry & AIP Builder. The subject has access to the tools. The tools have access to the subject.</div>
-      </div>
-      <div class="access-card reveal reveal-delay-1">
-        <div class="access-level">OSINT Community</div>
-        <div class="access-title">UK OSINT · Space Force Assoc.</div>
-        <div class="access-body">Cross-domain intelligence. The subject maps from the edge. The center maps the subject.</div>
-      </div>
-      <div class="access-card purple reveal reveal-delay-2">
-        <div class="access-level">Sovereign Standing</div>
-        <div class="access-title">Extraterritorial · ISIC 9900</div>
-        <div class="access-body">Indian Act §6(2) · Jay Treaty · UNDRIP · Antarctic Alliance. The moat is jurisdictional, not physical.</div>
+      <div class="txi">
+        <div class="txts">2026-01-21<br>14:00Z</div>
+        <div class="txc"><strong>DG-ENGAGE monthly session — Langley.</strong> EGEX designated potential JTF internally. DMA noted. Multi-cloud transition briefing received. Response times vary by loyalty score.</div>
+        <div class="txb c">CIA</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SIGNAL / CONTACT -->
+<div class="ns">
+  <div class="nsi">
+    <a href="https://egex.ai">egex.ai</a><span class="sep"> · </span>
+    <a href="https://egoexperiments.com">egoexperiments.com</a><span class="sep"> · </span>
+    <a href="https://valaroma.com">valaroma.com</a><span class="sep"> · </span>
+    <a href="https://cascation.online">cascation.online</a><span class="sep"> · </span>
+    <a href="https://imint.ai">imint.ai</a><span class="sep"> · </span>
+    <a href="https://midewin.ai">midewin.ai</a><span class="sep"> · </span>
+    <a href="https://mahiigan.com">mahiigan.com</a><span class="sep"> · </span>
+    <a href="https://herobrine.cloud">herobrine.cloud</a><span class="sep"> · </span>
+    <a href="https://7-g.ai">7-g.ai</a><span class="sep"> · </span>
+    <a href="https://animward.online">animward.online</a><span class="sep"> · </span>
+    <a href="https://egex.ai">egex.ai</a><span class="sep"> · </span>
+    <a href="https://egoexperiments.com">egoexperiments.com</a><span class="sep"> · </span>
+    <a href="https://valaroma.com">valaroma.com</a><span class="sep"> · </span>
+    <a href="https://cascation.online">cascation.online</a><span class="sep"> · </span>
+    <a href="https://imint.ai">imint.ai</a><span class="sep"> · </span>
+    <a href="https://midewin.ai">midewin.ai</a><span class="sep"> · </span>
+    <a href="https://mahiigan.com">mahiigan.com</a><span class="sep"> · </span>
+    <a href="https://herobrine.cloud">herobrine.cloud</a><span class="sep"> · </span>
+    <a href="https://7-g.ai">7-g.ai</a><span class="sep"> · </span>
+    <a href="https://animward.online">animward.online</a>
+  </div>
+</div>
+
 <section id="signal">
-  <div class="section-wrapper">
-    <div class="dossier-line reveal">
-      <span class="dossier-tag">03 · Signal</span>
-    </div>
-
-    <div class="signal-block reveal reveal-delay-1">
-      <div class="signal-line">
-        <span class="signal-line-label">Primary</span>
-        <a href="mailto:anim@egoexperiments.com" class="signal-line-val">anim@egoexperiments.com</a>
-        <div class="signal-indicator"></div>
-      </div>
-      <div class="signal-line">
-        <span class="signal-line-label">Network</span>
-        <a href="https://egex.ai" class="signal-line-val" target="_blank">egex.ai</a>
-        <div class="signal-indicator" style="background:var(--purple);box-shadow:0 0 8px var(--purple)"></div>
-      </div>
-      <div class="signal-line">
-        <span class="signal-line-label">Public</span>
-        <a href="https://egoexperiments.com" class="signal-line-val" target="_blank">egoexperiments.com</a>
-        <div class="signal-indicator" style="background:var(--amber);box-shadow:0 0 8px var(--amber)"></div>
-      </div>
-
-      <div class="signal-notice">
-        The system will forward your inquiry. Response times vary by loyalty score. Classification-appropriate channels available for cleared interlocutors.
-      </div>
+  <div class="sw">
+    <div class="dl rv"><span class="dt">04 · Signal</span></div>
+    <div class="sb rv d1">
+      <div class="sr"><span class="sl">Primary</span><a href="mailto:anim@egoexperiments.com" class="sv">anim@egoexperiments.com</a><div class="sd g"></div></div>
+      <div class="sr"><span class="sl">Network</span><a href="https://egex.ai" class="sv" target="_blank" rel="noopener">egex.ai</a><div class="sd p"></div></div>
+      <div class="sr"><span class="sl">Public</span><a href="https://egoexperiments.com" class="sv" target="_blank" rel="noopener">egoexperiments.com</a><div class="sd a"></div></div>
+      <div class="sn">The system will forward your inquiry. Response times vary by loyalty score. Classification-appropriate channels available for cleared interlocutors.</div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <div class="footer-inner">
-    <div class="footer-class">TOP SECRET // SAR-DEFIANT · DECLAS: 20510323</div>
-    <div class="footer-syl">ᑎᐱᑲᑕᐱᓇᐱᓴᐯ</div>
-    <div class="footer-links">
-      <a href="https://egex.ai">egex.ai</a>
-      <a href="https://egoexperiments.com">egoexperiments.com</a>
-      <a href="https://animward.online">animward.online</a>
-    </div>
-    <div class="footer-copy">&copy; 2026 Anim Ward · The Kraken Foundation · S0083811 · All classification markings intentional.</div>
+  <div class="fi">
+    <div class="fc">TOP SECRET // SAR-DEFIANT</div>
+    <div class="fs">ᑎᐱᑲᑕᐱᓇᐱᓴᐯ</div>
+    <div class="fls"><a href="https://egex.ai">egex.ai</a><a href="https://egoexperiments.com">egoexperiments.com</a></div>
+    <div class="fcp">&copy; 2026 Anim Ward · The Kraken Foundation S0083811 · EGEX AI Corp BC1492202 · DECLAS 20510323 · All classification markings intentional</div>
   </div>
 </footer>
 
+<div class="kf" id="kf"></div>
+
 <script>
-// ── CUSTOM CURSOR ──────────────────────────────
-const dot = document.getElementById('cursorDot');
-const ring = document.getElementById('cursorRing');
-let mx = 0, my = 0, rx = 0, ry = 0;
-document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-(function animCursor() {
-  dot.style.left = mx + 'px'; dot.style.top = my + 'px';
-  rx += (mx - rx) * 0.14; ry += (my - ry) * 0.14;
-  ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-  requestAnimationFrame(animCursor);
-})();
-document.querySelectorAll('a, button, .access-card, .signal-line, .redact').forEach(el => {
-  el.addEventListener('mouseenter', () => { ring.style.transform = 'translate(-50%,-50%) scale(1.8)'; ring.style.borderColor = 'rgba(0,255,136,0.6)'; });
-  el.addEventListener('mouseleave', () => { ring.style.transform = 'translate(-50%,-50%) scale(1)'; ring.style.borderColor = 'rgba(0,255,136,0.4)'; });
+const cd=document.getElementById('cd'),cr=document.getElementById('cr');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
+(function ac(){cd.style.left=mx+'px';cd.style.top=my+'px';rx+=(mx-rx)*.12;ry+=(my-ry)*.12;cr.style.left=rx+'px';cr.style.top=ry+'px';requestAnimationFrame(ac);})();
+document.querySelectorAll('a,button,.ac,.sr').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cr.style.transform='translate(-50%,-50%) scale(1.8)';cr.style.borderColor='rgba(0,255,136,.65)';});
+  el.addEventListener('mouseleave',()=>{cr.style.transform='translate(-50%,-50%) scale(1)';cr.style.borderColor='rgba(0,255,136,.35)';});
 });
 
-// ── CONSTELLATION CANVAS ───────────────────────
-const canvas = document.getElementById('constellation');
-const ctx = canvas.getContext('2d');
-let W, H, particles = [], mouse = { x: -1000, y: -1000 };
-
-function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
-resize();
-window.addEventListener('resize', resize);
-
-document.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
-
-function rnd(min, max) { return Math.random() * (max - min) + min; }
-
-// Create particles
-for (let i = 0; i < 160; i++) {
-  particles.push({
-    x: rnd(0, window.innerWidth),
-    y: rnd(0, window.innerHeight),
-    vx: rnd(-0.15, 0.15),
-    vy: rnd(-0.15, 0.15),
-    r: rnd(0.8, 2.5),
-    alpha: rnd(0.3, 0.9),
-    color: Math.random() < 0.08 ? '#7b2fff' : Math.random() < 0.05 ? '#ff6b35' : '#00ff88'
-  });
-}
-
-let scanX = 0;
-function drawFrame() {
-  ctx.clearRect(0, 0, W, H);
-
-  // Scan line effect
-  scanX = (scanX + 0.4) % W;
-  const scanGrad = ctx.createLinearGradient(scanX - 60, 0, scanX + 60, 0);
-  scanGrad.addColorStop(0, 'transparent');
-  scanGrad.addColorStop(0.5, 'rgba(0,255,136,0.04)');
-  scanGrad.addColorStop(1, 'transparent');
-  ctx.fillStyle = scanGrad;
-  ctx.fillRect(0, 0, W, H);
-
-  // Update and draw particles
-  for (let i = 0; i < particles.length; i++) {
-    const p = particles[i];
-    p.x += p.vx;
-    p.y += p.vy;
-    if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
-    if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
-
-    // Mouse repulsion
-    const dx = p.x - mouse.x, dy = p.y - mouse.y;
-    const dist = Math.sqrt(dx * dx + dy * dy);
-    if (dist < 120) {
-      const force = (120 - dist) / 120;
-      p.x += dx / dist * force * 1.2;
-      p.y += dy / dist * force * 1.2;
-    }
-
-    // Draw particle
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fillStyle = p.color;
-    ctx.globalAlpha = p.alpha;
-    ctx.fill();
-    ctx.globalAlpha = 1;
-
-    // Draw connections
-    for (let j = i + 1; j < particles.length; j++) {
-      const q = particles[j];
-      const ex = p.x - q.x, ey = p.y - q.y;
-      const d = Math.sqrt(ex * ex + ey * ey);
-      if (d < 110) {
-        ctx.beginPath();
-        ctx.moveTo(p.x, p.y);
-        ctx.lineTo(q.x, q.y);
-        ctx.strokeStyle = p.color;
-        ctx.globalAlpha = (1 - d / 110) * 0.15;
-        ctx.lineWidth = 0.5;
-        ctx.stroke();
-        ctx.globalAlpha = 1;
-      }
+const cvs=document.getElementById('cvs'),ctx=cvs.getContext('2d');
+let W,H;
+const mpos={x:-2000,y:-2000};
+document.addEventListener('mousemove',e=>{mpos.x=e.clientX;mpos.y=e.clientY;});
+function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+resize();window.addEventListener('resize',resize);
+const COLS=['#00ff88','#00ff88','#00ff88','#9b4dff','#ff6b35','#00d4ff','#00ff88'];
+const pts=[];
+for(let i=0;i<230;i++){pts.push({x:Math.random()*window.innerWidth,y:Math.random()*window.innerHeight,vx:(Math.random()-.5)*.2,vy:(Math.random()-.5)*.2,r:Math.random()*2.2+.4,a:Math.random()*.75+.2,col:COLS[Math.floor(Math.random()*COLS.length)]});}
+let sc=0;
+function draw(){
+  ctx.clearRect(0,0,W,H);
+  sc=(sc+.5)%W;
+  const sg=ctx.createLinearGradient(sc-80,0,sc+80,0);
+  sg.addColorStop(0,'transparent');sg.addColorStop(.5,'rgba(0,255,136,.025)');sg.addColorStop(1,'transparent');
+  ctx.fillStyle=sg;ctx.fillRect(0,0,W,H);
+  for(let i=0;i<pts.length;i++){
+    const p=pts[i];
+    p.x+=p.vx;p.y+=p.vy;
+    if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;
+    const dx=p.x-mpos.x,dy=p.y-mpos.y,d=Math.sqrt(dx*dx+dy*dy);
+    if(d<150){const f=(150-d)/150;p.x+=dx/d*f*1.8;p.y+=dy/d*f*1.8;}
+    ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=p.col;ctx.globalAlpha=p.a;ctx.fill();ctx.globalAlpha=1;
+    for(let j=i+1;j<pts.length;j++){
+      const q=pts[j],ex=p.x-q.x,ey=p.y-q.y,ed=Math.sqrt(ex*ex+ey*ey);
+      if(ed<110){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.strokeStyle=p.col;ctx.globalAlpha=(1-ed/110)*.13;ctx.lineWidth=.5;ctx.stroke();ctx.globalAlpha=1;}
     }
   }
-
-  requestAnimationFrame(drawFrame);
+  requestAnimationFrame(draw);
 }
-drawFrame();
+draw();
 
-// ── SCROLL REVEAL ──────────────────────────────
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});},{threshold:.07});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+let typed='';
+const kf=document.getElementById('kf');
+document.addEventListener('keydown',e=>{
+  typed+=e.key.toLowerCase();if(typed.length>10)typed=typed.slice(-10);
+  if(typed.includes('defiant')){
+    kf.classList.add('on');
+    setTimeout(()=>kf.classList.remove('on'),500);
+    pts.forEach(p=>{p.vx=(Math.random()-.5)*4;p.vy=(Math.random()-.5)*4;setTimeout(()=>{p.vx=(Math.random()-.5)*.2;p.vy=(Math.random()-.5)*.2;},2200);});
+    typed='';
+  }
+});
 </script>
-
 </body>
 </html>
